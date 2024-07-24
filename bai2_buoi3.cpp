@@ -7,6 +7,7 @@
 //
 //#define MAX 100
 //
+//// 2.1: tao va xuat ma tran 
 //void taoMaTran(int a[][MAX], int n, int min, int max) {
 //	srand((unsigned int)time(0));
 //	for (int i = 0; i < n; i++) {
@@ -25,13 +26,14 @@
 //	}
 //}
 //
+//// 2.2: xuat cac phan tu tren duong cheo chinh
 //void xuatCheoChinh(int a[][MAX], int n) {
 //	for (int i = 0; i < n; i++) {
 //		printf("%d ", a[i][i]);
 //	}
 //	printf("\n");
 //}
-//
+//// 2.3: xuat cheo phu
 //void xuatCheoPhu(int a[][MAX], int n) {
 //	for (int i = 0; i < n; i++) {
 //		printf("%d ", a[i][n - 1 - i]);
@@ -39,6 +41,7 @@
 //	printf("\n");
 //}
 //
+//// 2.4: tim max thuoc tam giac tren cua duong cheo chinh
 //int timMaxTamGiacTren(int a[][MAX], int n) {
 //	int max = a[0][0];
 //	for (int i = 0; i < n; i++) {
@@ -51,6 +54,7 @@
 //	return max;
 //}
 //
+//// 2.5: sap xep zigzag
 //void sapXepZigZag(int a[][MAX], int n) {
 //	int temp[MAX*MAX];
 //	int k = 0;
@@ -86,6 +90,7 @@
 //	}
 //}
 //
+//// 2.6: sap xep duong cheo chinh tang dan 
 //void sapXepCheoChinh(int a[][MAX], int n) {
 //	int temp[MAX];
 //	for (int i = 0; i < n; i++) {
