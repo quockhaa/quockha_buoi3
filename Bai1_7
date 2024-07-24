@@ -1,0 +1,26 @@
+// 1.7: xuat cac phan tu la diem yen ngua
+bool laDiemYenNgua(int a[][MAX], int m, int n, int i, int j) {
+	int max = a[i][j];
+	for (int k = 0; k < n; k++) {
+		if (a[i][k] > max) {
+			return false;
+		}
+	}
+	int min = a[i][j];
+	for (int k = 0; k < m; k++) {
+		if (a[k][j] < min) {
+			return false;
+		}
+	}
+	return true;
+}
+
+void xuatDiemYenNgua(int a[][MAX], int m, int n) {
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			if (laDiemYenNgua(a, m, n, i, j)) {
+				printf("Diem yen ngua tai (%d, %d): %d\n", i, j, a[i][j]);
+			}
+		}
+	}
+}
