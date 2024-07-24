@@ -1,0 +1,18 @@
+// 1.8: xuat dong chi chua so chan
+void xuatDongSoChan(int a[][MAX], int m, int n) {
+	for (int i = 0; i < m; i++) {
+		bool chiSoChan = true;
+		for (int j = 0; j < n; j++) {
+			if (a[i][j] % 2 != 0) {
+				chiSoChan = false;
+				break;
+			}
+		}
+		if (chiSoChan) {
+			for (int j = 0; j < n; j++) {
+				printf("%d ", a[i][j]);
+			}
+			printf("\n");
+		}
+	}
+}
