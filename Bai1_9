@@ -1,0 +1,14 @@
+// 1.9: sap xep mang a tang dan theo tung dong
+void sapXepDongTangDan(int a[][MAX], int m, int n) {
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n - 1; j++) {
+			for (int k = j + 1; k < n; k++) {
+				if (a[i][j] > a[i][k]) {
+					int temp = a[i][j];
+					a[i][j] = a[i][k];
+					a[i][k] = temp;
+				}
+			}
+		}
+	}
+}
